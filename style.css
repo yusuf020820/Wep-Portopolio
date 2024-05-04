@@ -1,0 +1,285 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1100px;
+    margin:0 auto;
+}
+
+/* button */
+.btn{
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+
+/* title */
+.pre-tiitle{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.pre-tiitle::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* logo dan nav */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.2 ease-in-out;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.logo a{
+    color: black;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: 900;
+}
+
+/* Home Section */
+
+#home {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}.home-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0,5;
+    color: black;
+}
+
+.Home-right img{
+    width: 500px;
+    border-radius: 7rem;
+}
+
+.Home-right {
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    padding-left: 3rem ;
+    padding-bottom: 5rem;
+}
+
+/* About */
+
+#about{
+    background: rgb(196, 196, 196);
+    padding: 6rem 0;
+}
+.section-title-about{
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+/* layout */
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 3rem ;
+}
+
+.about{
+    padding: 3rem 2rem ;
+    text-align: center;
+    background: black;
+    border-radius: 0.7rem;
+}
+
+.about h4 {
+    color: white;
+    margin: 0,5rem 0  ;
+}
+.about p{
+    color: white;
+}
+
+.about-icon{
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1,3rem;
+    border-radius: 0,5rem;
+}
+
+/* End About */
+
+/* skills */
+#Skills{
+    padding: 6rem 0 ;
+    background: white;
+}
+.sesction-title-skills{
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    gap: 3rem;
+}
+.Pengalaman{
+    display: flex;
+    gap: 2rem;
+}
+.Pengalaman line{
+    padding: 0 0,7rem;
+}
+
+.Pengalaman .line div{
+    height: 100%;
+    width: 2px;
+    background: black;
+    position: relative;
+}
+.experion_info{
+    margin: 0.3rem 0 ;
+}
+
+.Experience_date{
+    margin-bottom: 3rem;
+}
+
+.Pengalaman .line div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skill_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right{
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+/* end Sklills */
+
+/* contact */
+#contact{
+    padding: 6rem;
+}
+
+.Contact-form input,
+.Contact-form textarea{
+    width:100% ;
+    padding: 0.75rem 1.3rem;
+    font-family: "roboto",sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+
+.Contact-form input::placeholder,
+.Contact-form textarea::placeholder{
+    color: black ;
+}
+
+.Contact-form input:focus,
+.Contact-form textarea:focus{
+    outline: none;
+    border: 1px solid grey;
+}
+
+.btn-submit{
+   width: 100%;
+   padding:  0.75rem 1.3rem;
+   background-color: black;
+   color: white; 
+   border-radius: 3px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out ;
+}
+
+.btn-submit:hover{
+    background-color: grey;
+    color: black;
+}
+
+.Contact-form div{
+    margin: 1rem;
+}
+/* end Contact */
+
+/* footer */
+footer {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: grey;
+    text-align: center;
+}
+.footer-icon{
+    margin-bottom: 1rem;
+}
+
+.footer-icon a{
+    margin: 0 0.5rem;
+}
+
+.footer-icon a:hover{
+    fill:black
+}
+
+.footer-icon{
+    fill: grey;
+}
+
+/* end Footer */
